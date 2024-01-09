@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.Random;
 
 
-public class Candy {
+public class Fruity {
     
 
     Color []cl =  new Color[6];
@@ -22,7 +22,7 @@ public class Candy {
     JTextField jt = new JTextField();
     JLabel jb = new JLabel("   Score: "+score+"                          Moves: "+moves);
 
-    public Candy()
+    public Fruity()
     {
         
         score = 0; // Initialize score to 0 after UI components setup
@@ -54,7 +54,7 @@ public class Candy {
         cn.add(jp);
 
         
-        jf.setTitle("Candy Crush");
+        jf.setTitle("Fruity Crush");
         jf.setSize(1000,655);
         jf.setLocation(200,0);
         //jf.setUndecorated(true);
@@ -151,7 +151,7 @@ public class Candy {
 
                                     if(check == JOptionPane.YES_OPTION)
                                     {
-                                        new Candy();
+                                        new Fruity();
                                         jf.dispose();
                                     }
                                     else if(check == JOptionPane.NO_OPTION)
@@ -321,6 +321,6 @@ public class Candy {
 
     public static void main(String [] arg)
     {
-        new Candy();
+        new Fruity();
     }
 }
